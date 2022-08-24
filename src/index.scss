@@ -1,3 +1,5 @@
+@import "./styles/scss/utils.scss";
+
 html,body {
   margin: 0;
   padding: 0;
@@ -8,6 +10,8 @@ html,body {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   overflow-x: hidden;
+
+  background-color: $GRAY;
 }
 
 *{

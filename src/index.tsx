@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.scss";
 import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+import Layout from "./layout/Layout";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -10,6 +12,10 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Layout>
+        <App />
+      </Layout>
+    </BrowserRouter>
   </React.StrictMode>
 );
