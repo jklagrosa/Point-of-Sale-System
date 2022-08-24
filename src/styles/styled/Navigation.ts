@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
-export const Styled = styled.div`
-
-`
+export const HomeStyled = styled.div`
+  /* margin: 0 auto; */
+  width: 800px;
+`;

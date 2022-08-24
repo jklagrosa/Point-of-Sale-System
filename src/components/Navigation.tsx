@@ -10,16 +10,17 @@ function Navigation() {
   return (
     <>
       <Navbar expand="lg" id={styles._navbar_component_}>
-        <Container>
-          {/* <Navbar.Brand href="#home">Point of Sale</Navbar.Brand> */}
+        <Container className="p-0">
+          <Navbar.Brand id={styles._navbar_brand_name_}>
+            Kusinero<span>Korner</span>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto" id={styles._navbar_links_wrapper_}>
+            <Nav className="ms-auto" id={styles._navbar_links_wrapper_}>
               <Nav.Link
-                href="#home"
                 style={
                   location.pathname === "/"
-                    ? { background: " #6738DC", color: "white" }
+                    ? { background: "#FDA62B", color: "white" }
                     : { background: "" }
                 }
                 onClick={() => navigate("/", { replace: true })}
@@ -27,46 +28,47 @@ function Navigation() {
                 Show All
               </Nav.Link>
               <Nav.Link
-                href="#home"
                 style={
                   location.pathname === "/burgers"
-                    ? { background: " #6738DC", color: "white" }
+                    ? { background: " #FDA62B", color: "white" }
                     : { background: "" }
                 }
+                onClick={() => navigate("/burgers", { replace: true })}
               >
                 Burgers
               </Nav.Link>
               <Nav.Link
-                href="#home"
                 style={
                   location.pathname === "/pizza"
-                    ? { background: " #6738DC", color: "white" }
+                    ? { background: " #FDA62B", color: "white" }
                     : { background: "" }
                 }
+                onClick={() => navigate("/pizza", { replace: true })}
               >
                 Pizza
               </Nav.Link>
               <Nav.Link
-                href="#home"
                 style={
                   location.pathname === "/drinks"
-                    ? { background: " #6738DC", color: "white" }
+                    ? { background: " #FDA62B", color: "white" }
                     : { background: "" }
                 }
+                onClick={() => navigate("/drinks", { replace: true })}
               >
                 Drinks
               </Nav.Link>
               <Nav.Link
-                href="#home"
                 style={
                   location.pathname === "/dessert"
-                    ? { background: " #6738DC", color: "white" }
+                    ? { background: " #FDA62B", color: "white" }
                     : { background: "" }
                 }
+                onClick={() => navigate("/dessert", { replace: true })}
               >
                 Dessert
               </Nav.Link>
             </Nav>
+            {/*  */}
           </Navbar.Collapse>
         </Container>
       </Navbar>

@@ -2,26 +2,40 @@
 
 #_navbar_component_{
     width: 100vw;
-    background-color: white;
+    // background-color: white;
+    background-color: $PURPLE;
     padding: 1.25rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
     @media only screen and (max-width: 768px) {
         padding: 1rem;
     }
 
+
+    #_navbar_brand_name_{
+        font-size: 1.25rem;
+        font-weight: bolder;
+        color: $ORANGE;
+
+        span{
+            color: white;
+        }
+    }
+
+
     #_navbar_links_wrapper_{
         a{
-  
-            color: black;
-            border-radius: 15px;
-            padding: 0.512rem 1.25rem;
-            margin-right: 4rem;
+            outline: none;
+            box-shadow: none;
+            color: white;
+            border-radius: 10px;
+            padding: 0.512rem 1rem;
+            margin-right: 2rem;
             font-size: 1rem;
             transition: all 0.2s ease-in-out;
         }
     }
 
+   
 
 }
