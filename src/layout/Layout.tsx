@@ -2,6 +2,7 @@ import React from "react";
 import Navigation from "../components/Navigation";
 import CheckOut from "../components/CheckOut";
 import { Row, Col } from "react-bootstrap";
+import styles from "../styles/scss/CheckOut.module.scss";
 
 function Layout({ children }: any) {
   return (
@@ -13,7 +14,7 @@ function Layout({ children }: any) {
           {children}
         </Col>
         {/*  */}
-        <Col xs={12} lg={4}>
+        <Col xs={12} lg={4} id={styles._hide_checkout_on_small_devices_}>
           <CheckOut />
         </Col>
         {/*  */}

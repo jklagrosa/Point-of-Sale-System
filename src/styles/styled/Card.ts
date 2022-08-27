@@ -17,6 +17,22 @@ export const CardBodyStyled = styled.div`
       transform: scale(1.15);
     }
   }
+
+  @media only screen and (max-width: 991px) {
+    width: 300px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    width: 500px;
+  }
+
+  @media only screen and (max-width: 576px) {
+    width: 300px;
+  }
+
+  @media only screen and (max-width: 375px) {
+    width: 280px;
+  }
 `;
 
 export const CardImageStyled = styled.img`

@@ -10,6 +10,10 @@ export const WrapperStyled = styled.div`
   background: white;
 
   border-left: 3px solid ${colorsObj.PURPLE};
+
+  /* @media only screen and (max-width: 991px) {
+    display: none;
+  } */
 `;
 
 export const ItemStyled = styled.div`
@@ -28,18 +32,30 @@ export const CheckOutImg = styled.img`
   object-fit: cover;
   object-position: center;
   border-radius: 4px;
+
+  /* @media only screen and (max-width: 1199px) {
+
+  } */
 `;
 
 export const CheckOutTitle = styled.h1`
   margin-bottom: 0.64rem;
   font-size: 1.1rem;
   font-weight: 700;
+
+  @media only screen and (max-width: 1199px) {
+    font-size: 1rem;
+  }
 `;
 
 export const CheckOutPrice = styled.h2`
   font-size: 1.1rem;
   color: ${colorsObj.PURPLE};
   font-weight: normal;
+
+  @media only screen and (max-width: 1199px) {
+    font-size: 1rem;
+  }
 `;
 
 export const CheckOutBtnsStyled = styled.div`
@@ -62,6 +78,13 @@ export const CheckOutBtn = styled.button`
   &:active {
     background: ${colorsObj.H_PURPLE};
   }
+
+  @media only screen and (max-width: 1199px) {
+    font-size: 1.25rem;
+    min-width: 50px;
+    display: block;
+    margin-bottom: 1rem;
+  }
 `;
 
 export const CheckOutResult = styled.span`
@@ -69,6 +92,10 @@ export const CheckOutResult = styled.span`
   width: 100px;
   font-size: 2rem;
   font-weight: 700;
+
+  @media only screen and (max-width: 1199px) {
+    font-size: 1.25rem;
+  }
 `;
 
 export const CheckOutQtyText = styled.span`
@@ -92,9 +119,14 @@ export const PurchaseProductButtonStyled = styled.button`
   padding: 0.64rem;
   transition: all 0.2s ease-in-out;
   border-radius: 10px;
+  font-size: 1rem;
 
   &:hover,
   &:active {
     background: #880808;
+  }
+
+  @media only screen and (max-width: 1199px) {
+    width: 150px;
   }
 `;
