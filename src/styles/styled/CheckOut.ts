@@ -33,6 +33,18 @@ export const CheckOutImg = styled.img`
   object-position: center;
   border-radius: 4px;
 
+  @media only screen and (min-width: 2501px) {
+    min-height: 300px;
+  }
+
+  @media only screen and (min-width: 2201px) and (max-width: 2500px) {
+    min-height: 280px;
+  }
+
+  @media only screen and (min-width: 1801px) and (max-width: 2200px) {
+    min-height: 250px;
+  }
+
   /* @media only screen and (max-width: 1199px) {
 
   } */
@@ -43,6 +55,22 @@ export const CheckOutTitle = styled.h1`
   font-size: 1.1rem;
   font-weight: 700;
 
+  @media only screen and (min-width: 2501px) {
+    font-size: 2rem;
+  }
+
+  @media only screen and (min-width: 2201px) and (max-width: 2500px) {
+    font-size: 1.75rem;
+  }
+
+  @media only screen and (min-width: 1801px) and (max-width: 2200px) {
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (min-width: 1400px) and (max-width: 1800px) {
+    font-size: 1.25rem;
+  }
+
   @media only screen and (max-width: 1199px) {
     font-size: 1rem;
   }
@@ -52,6 +80,22 @@ export const CheckOutPrice = styled.h2`
   font-size: 1.1rem;
   color: ${colorsObj.PURPLE};
   font-weight: normal;
+
+  @media only screen and (min-width: 2501px) {
+    font-size: 2rem;
+  }
+
+  @media only screen and (min-width: 2201px) and (max-width: 2500px) {
+    font-size: 1.75rem;
+  }
+
+  @media only screen and (min-width: 1801px) and (max-width: 2200px) {
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (min-width: 1400px) and (max-width: 1800px) {
+    font-size: 1.25rem;
+  }
 
   @media only screen and (max-width: 1199px) {
     font-size: 1rem;
@@ -79,6 +123,26 @@ export const CheckOutBtn = styled.button`
     background: ${colorsObj.H_PURPLE};
   }
 
+  @media only screen and (min-width: 2501px) {
+    width: 150px;
+    font-size: 2.75rem;
+  }
+
+  @media only screen and (min-width: 2201px) and (max-width: 2500px) {
+    width: 130px;
+    font-size: 2.5rem;
+  }
+
+  @media only screen and (min-width: 1801px) and (max-width: 2200px) {
+    width: 100px;
+    font-size: 2.25rem;
+  }
+
+  @media only screen and (min-width: 1400px) and (max-width: 1800px) {
+    width: 70px;
+    font-size: 2rem;
+  }
+
   @media only screen and (max-width: 1199px) {
     font-size: 1.25rem;
     min-width: 50px;
@@ -93,6 +157,24 @@ export const CheckOutResult = styled.span`
   font-size: 2rem;
   font-weight: 700;
 
+  @media only screen and (min-width: 2501px) {
+    font-size: 3rem;
+  }
+
+  @media only screen and (min-width: 2201px) and (max-width: 2500px) {
+    font-size: 2.75rem;
+  }
+
+  @media only screen and (min-width: 1801px) and (max-width: 2200px) {
+    font-size: 2.5rem;
+  }
+
+  @media only screen and (min-width: 1400px) and (max-width: 1800px) {
+    font-size: 2.25rem;
+  }
+
+  /*  */
+
   @media only screen and (max-width: 1199px) {
     font-size: 1.25rem;
   }
@@ -101,6 +183,22 @@ export const CheckOutResult = styled.span`
 export const CheckOutQtyText = styled.span`
   font-size: 1rem;
   font-weight: 400;
+
+  @media only screen and (min-width: 2501px) {
+    font-size: 2rem;
+  }
+
+  @media only screen and (min-width: 2201px) and (max-width: 2500px) {
+    font-size: 1.75rem;
+  }
+
+  @media only screen and (min-width: 1801px) and (max-width: 2200px) {
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (min-width: 1400px) and (max-width: 1800px) {
+    font-size: 1.25rem;
+  }
 `;
 
 export const PurchaseProductsStyled = styled.div`
@@ -125,6 +223,27 @@ export const PurchaseProductButtonStyled = styled.button`
   &:active {
     background: #880808;
   }
+
+  @media only screen and (min-width: 2501px) {
+    width: 700px;
+    font-size: 2rem;
+  }
+
+  @media only screen and (min-width: 2201px) and (max-width: 2500px) {
+    width: 600px;
+    font-size: 1.75rem;
+  }
+
+  @media only screen and (min-width: 1801px) and (max-width: 2200px) {
+    width: 500px;
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (min-width: 1400px) and (max-width: 1800px) {
+    font-size: 1.25rem;
+  }
+
+  /*  */
 
   @media only screen and (max-width: 1199px) {
     width: 150px;
