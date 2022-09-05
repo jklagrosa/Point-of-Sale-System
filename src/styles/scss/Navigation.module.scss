@@ -49,6 +49,12 @@ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
 
 
+    ._navbar_collapse_{
+        @media only screen and (max-width: 991px) {
+            display: none;
+        }
+    }
+
     #_navbar_links_wrapper_{
         a{
             outline: none;

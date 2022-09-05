@@ -15,7 +15,10 @@ function Navigation() {
             Kusinero<span>Korner</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse
+            id="basic-navbar-nav"
+            className={styles._navbar_collapse_}
+          >
             <Nav className="ms-auto" id={styles._navbar_links_wrapper_}>
               <Nav.Link
                 style={
