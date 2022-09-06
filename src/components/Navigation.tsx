@@ -84,13 +84,63 @@ function Navigation() {
       </Navbar>
 
       {/* OFFCANVAS */}
-      <Offcanvas show={show} onHide={handleClose}>
+      <Offcanvas show={show} onHide={handleClose} id={styles._offcanvas_main_}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title id={styles._offcanvas_title_}>
+            Kusinero<span>Korner</span>
+          </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
+          <Nav.Link
+            style={
+              location.pathname === "/"
+                ? { background: "#FDA62B", color: "white" }
+                : { background: "" }
+            }
+            onClick={() => navigate("/", { replace: true })}
+          >
+            Show All
+          </Nav.Link>
+          <Nav.Link
+            style={
+              location.pathname === "/burgers"
+                ? { background: " #FDA62B", color: "white" }
+                : { background: "" }
+            }
+            onClick={() => navigate("/burgers", { replace: true })}
+          >
+            Burgers
+          </Nav.Link>
+          <Nav.Link
+            style={
+              location.pathname === "/pizza"
+                ? { background: " #FDA62B", color: "white" }
+                : { background: "" }
+            }
+            onClick={() => navigate("/pizza", { replace: true })}
+          >
+            Pizza
+          </Nav.Link>
+          <Nav.Link
+            style={
+              location.pathname === "/drinks"
+                ? { background: " #FDA62B", color: "white" }
+                : { background: "" }
+            }
+            onClick={() => navigate("/drinks", { replace: true })}
+          >
+            Drinks
+          </Nav.Link>
+          <Nav.Link
+            style={
+              location.pathname === "/dessert"
+                ? { background: " #FDA62B", color: "white" }
+                : { background: "" }
+            }
+            onClick={() => navigate("/dessert", { replace: true })}
+          >
+            Dessert
+          </Nav.Link>
         </Offcanvas.Body>
       </Offcanvas>
       {/* END */}
